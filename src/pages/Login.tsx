@@ -1,12 +1,10 @@
 import React from 'react';
 import { useAuth } from '../hooks/useAuth';
-import { useNavigate, Link } from 'react-router-dom';
 
 const Login = () => {
   const { loginData, handleLoginChange } = useAuth(); // ✅ correct
-  const navigate = useNavigate(); // ✅ correct
 
-  const handleLoginSubmit = (e: React.FormEvent) => {
+  const handleLoginSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Your login logic
   };

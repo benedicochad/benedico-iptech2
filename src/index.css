@@ -2,48 +2,51 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #f0f4f8; /* light background */
+  background-color: #e6ecf3; /* slightly cooler gray-blue */
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
+/* Title */
 h1 {
   text-align: center;
-  color: #2F80ED; /* primary blue */
+  color: #1f3c88; /* deeper blue */
 }
 
+/* Form (UNCHANGED layout, just stronger shadow) */
 form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  background-color: #ffffff; /* white card */
+  background-color: #ffffff;
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15); /* slightly stronger */
   width: 300px;
 }
 
+/* Inputs */
 input {
   padding: 0.75rem 1rem;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #999; /* darker border */
   font-size: 0.9rem;
   transition: border 0.2s;
 }
 
 input:focus {
   outline: none;
-  border-color: #2F80ED;
+  border-color: #1f3c88; /* darker blue focus */
 }
 
-/* Custom button styling based on your reference */
+/* Button (ONLY CHANGED FROM PINK → BLUE) */
 button {
-  background-color: #f6cde1;
-  border: 2px solid #333;
-  color: #333;
-  box-shadow: 0 2px 0 #333;
+  background-color: #1f3c88; /* masculine blue */
+  border: 2px solid #0f2027;
+  color: #fff;
+  box-shadow: 0 2px 0 #0f2027;
   padding: 0.75rem;
   border-radius: 5px;
   font-weight: bold;
@@ -53,9 +56,10 @@ button {
 
 button:hover {
   transform: translateY(1px);
-  box-shadow: 0 1px 0 #333;
+  box-shadow: 0 1px 0 #0f2027;
 }
 
+/* Container (UNCHANGED) */
 .container {
   display: flex;
   justify-content: center;
@@ -64,7 +68,7 @@ button:hover {
   max-width: 800px;
 }
 
-/* Responsive for mobile */
+/* Responsive (UNCHANGED) */
 @media (max-width: 700px) {
   .container {
     flex-direction: column;

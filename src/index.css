@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #e6ecf3; /* slightly cooler gray-blue */
+  background: linear-gradient(135deg, #1f3c88, #0f2027); /* dark blue gradient */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,63 +12,76 @@ body {
 /* Title */
 h1 {
   text-align: center;
-  color: #1f3c88; /* deeper blue */
+  color: #ffffff;
+  letter-spacing: 1px;
 }
 
-/* Form (UNCHANGED layout, just stronger shadow) */
+/* Form Card */
 form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   background-color: #ffffff;
   padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15); /* slightly stronger */
-  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  width: 320px;
 }
 
 /* Inputs */
 input {
   padding: 0.75rem 1rem;
-  border-radius: 5px;
-  border: 1px solid #999; /* darker border */
+  border-radius: 6px;
+  border: 1px solid #aaa;
   font-size: 0.9rem;
-  transition: border 0.2s;
+  transition: all 0.2s ease;
 }
 
 input:focus {
   outline: none;
-  border-color: #1f3c88; /* darker blue focus */
+  border-color: #1f3c88;
+  box-shadow: 0 0 5px rgba(31, 60, 136, 0.5);
 }
 
-/* Button (ONLY CHANGED FROM PINK → BLUE) */
+/* Button (Masculine Style) */
 button {
-  background-color: #1f3c88; /* masculine blue */
+  background: linear-gradient(135deg, #1f3c88, #0f2027);
   border: 2px solid #0f2027;
   color: #fff;
-  box-shadow: 0 2px 0 #0f2027;
+  box-shadow: 0 3px 0 #0a1620;
   padding: 0.75rem;
-  border-radius: 5px;
+  border-radius: 6px;
   font-weight: bold;
   cursor: pointer;
-  transition: transform 0.1s, box-shadow 0.1s;
+  transition: all 0.15s ease;
 }
 
 button:hover {
   transform: translateY(1px);
-  box-shadow: 0 1px 0 #0f2027;
+  box-shadow: 0 1px 0 #0a1620;
 }
 
-/* Container (UNCHANGED) */
+/* Container */
 .container {
   display: flex;
   justify-content: center;
   gap: 2rem;
   width: 100%;
-  max-width: 800px;
+  max-width: 900px;
 }
 
-/* Responsive (UNCHANGED) */
+/* Links */
+a {
+  color: #1f3c88;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
 @media (max-width: 700px) {
   .container {
     flex-direction: column;
